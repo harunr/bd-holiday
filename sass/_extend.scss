@@ -1,0 +1,119 @@
+%body{
+    font-size: $fz-18;
+    line-height: $lh-24;
+    font-family: $futurapt-light;
+    letter-spacing: normal;
+    background-color: $pampas;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust:100%;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    padding: 0 5px;
+}
+%h1, %h2, %h3, %h4, %h5, %h6{
+    letter-spacing: normal; 
+	font-weight: normal;
+	color: $flame-pea;
+	font-family: $futurapt-medium;
+}
+
+%h1{
+    font-size: $fz-50; 
+	line-height: $lh-55; 
+	font-family:$futuraptdemi;
+    
+}
+
+%h2{
+    font-size: $fz-36;
+    line-height: $lh-40;
+    
+}
+
+%h3{
+    font-size: $fz-32;
+    line-height: $lh-36;
+}
+
+%h4{
+    font-size: $fz-22;
+    line-height: $lh-24;
+
+}
+
+%h5{
+    font-size: $fz-18;
+    line-height: $lh-22;
+    
+  
+}
+
+%h6{
+    font-size: $fz-16;
+    line-height: $lh-22;
+
+}
+
+%bg-style{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+%btn{
+    @include transition(.3s, ease-in);
+    font-weight: normal;
+}
+
+%large{
+    width: 214px;
+    height: 49px;
+    line-height: 47px;
+   
+    background-color: transparent;
+}
+
+%medium{
+    width: 130px;
+    height: 30px;
+    line-height: 28px;
+    background-color: transparent;
+}
+
+
+   
+  
+   
+
+%input, %textarea{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    background: transparent;
+   
+    padding: 0 5px;
+    border-radius: 0;
+    
+    &::placeholder{
+        font-size: $fz-14;
+        opacity: 1;
+       
+    }
+    
+}
+
+%textarea{
+    height: 120px;
+    resize: none;
+}
+
+
+
+
+

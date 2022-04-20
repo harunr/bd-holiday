@@ -1,0 +1,107 @@
+/* Mixin */
+@mixin transform ($property, $property1) {
+    -webkit-transform: translate($property, $property1);
+    -moz-transform: translate($property, $property1);
+    -ms-transform: translate($property, $property1);
+    -o-transform: translate($property, $property1);
+    transform: translate($property, $property1);
+}
+
+@mixin transition($value:$value, $value1:$value1){
+    -webkit-transition: $value() $value1();
+    -moz-transition: $value() $value1();
+    -o-transition: $value() $value1();
+    -ms-transition: $value() $value1();
+    transition: $value() $value1();
+}
+
+@mixin flexbox($value:$value, $value1:$value1){
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    -ms-display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $value();
+    align-items: $value1();
+}
+
+@mixin commonWrap($common-wrap){
+    max-width: $common-wrap;
+    padding: 0 30px;
+    margin: 0 auto;
+    clear: both;
+}
+
+
+
+@mixin lgFull {
+    @media(min-width:1280px) and (max-width:1900px){
+        @content;
+    }
+}
+
+
+@mixin mdMax {
+    @media (min-width:992px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mdMinMax {
+    @media(min-width:768px) and (max-width:991px){
+        @content;
+    }
+}
+@mixin smMax {
+    @media(min-width:320px) and (max-width:767px){
+        @content;
+		
+		
+    }
+}
+
+@mixin smLandscape{
+    @media(min-width:481px) and (max-width:767px){
+        @content;
+    }
+}
+
+
+@mixin smHd{
+    @media(min-width:320px) and (max-width:1024px){
+        @content;
+        
+    }
+}
+
+@mixin smHdmin{
+    @media(min-width:320px) and (max-width:991px){
+        @content;
+        
+    }
+}
+
+@mixin hdMax{
+    @media (max-width:992px){
+        @content;
+        
+    }
+}
+
+@mixin hdland{
+    @media(min-width:320px) and (max-width:1380px){
+        @content;
+        
+    }
+}
+
+@mixin hdMinMax{
+    @media(min-width:1025px) and (max-width:1180px){
+        @content;
+        
+    }
+}
+
+
+/* Mixin */
